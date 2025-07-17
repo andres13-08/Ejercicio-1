@@ -1,0 +1,684 @@
+* {
+    box-sizing: border-box;
+}
+
+/*MENÚ*/
+
+.body {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.main {
+    margin-bottom: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.navegador {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+}
+
+.navegador ul {
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navegador li {
+    background-color: #b5d7fc;
+    padding: 0;
+}
+
+@media (min-width: 780px) {
+.navegador ul {
+    display: flex;
+    gap: 35px;
+}
+
+.navegador li {
+    font-weight: bold;
+    background-color: white;
+}
+}
+
+.navegador a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+
+
+
+
+
+
+/*HOME*/ 
+/*HOME INTRODUCCIÓN*/
+.introduccion {
+    place-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(160, 163, 172);
+    margin: 1px;
+}
+
+.titulo-introduccion {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    align-content: center;
+    text-align: center;
+   }
+
+.parrafo-introduccion {
+    color: white;
+    background-color: rgb(76, 88, 128);
+    font-size: 20px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.enlace-servicios {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;;
+}
+
+.home-nosotros {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.home-titulo-por-que-redinnova {
+    margin: auto;
+    background-color: rgb(61, 50, 11);
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.home-parrafo-por-que-redinnova {
+    padding: 25px;
+    background-color: rgb(90, 79, 38);
+    color: white;
+    margin: 20px;
+    text-align: justify;
+}
+
+.home-razones-por-que-redinnova { /*FALTA REPLICAR EN pc*/
+    flex: 1 1 calc(100% - 10px);
+    box-sizing: border-box;
+    position: center;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(110, 102, 71);
+    margin: auto;
+    color: white;
+    height: 70px;
+}
+    
+@media (min-width: 780px) {
+    .introduccion {
+    place-items: center;
+    padding: 90px;
+    max-width: 100%;
+    background-color: rgb(160, 163, 172);
+    padding-bottom: 20px;
+}
+
+    .home-nosotros {
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.home-titulo-por-que-redinnova {
+    margin: auto;
+    background-color: rgb(61, 50, 11);
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.home-parrafo-por-que-redinnova {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    margin: 20px;
+    text-align: justify;
+}
+
+.home-razones-por-que-redinnova {
+    flex: 0 0 calc(50% - 5px);
+    position: center;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    height: 60px;
+    width: 40%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+/*NOSOTROS*/
+.nosotros {
+    width: 100%;
+    padding: 5px 5px;
+    max-width: 100%;
+    background-color: rgb(190, 193, 201);
+    padding: 15px;
+}
+
+.nosotros-razones1 {
+    flex: 1 1 calc(100% - 10px);
+    flex-wrap: wrap;
+    background-color: rgb(223, 82, 82);
+    padding: 15px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.enlace-contacto-nosotros {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.486);
+    font-weight: bold;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.enlace-contacto-nosotros:hover {
+    background-color: #222324;
+    color:brown;
+}
+
+.titulo-nosotros {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 1px;
+}
+
+.parrafo-nosotros {
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.titulo-por-que-redinnova {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-family: "Bebas Neue", sans-serif;
+    padding: 15px;
+}
+
+.nosotros-razones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@media (min-width: 780px) {
+    .nosotros-razones1 {
+        width: 70%;;
+    }
+
+    .titulo-nosotros {
+        margin: 0;
+    }    
+
+    .enlace-contacto-nosotros {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*SERVICIOS*/
+.especialidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.titulo-especialidades {
+    position: sticky;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgb(10, 131, 131);
+    top: 10px;
+    margin: 20px;
+}
+
+.especialidad1 {
+    display: inline-block;
+    place-content: center;
+    border: 3px solid rgba(0, 0, 0, 0.486);
+    text-align: left;
+    background-color: rgba(2, 199, 248, 0.733);
+    padding: 10px;
+    width: 100%;
+}
+
+.titulo-especialidades-con-bootstrap {
+    position: sticky;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: rgb(48, 177, 177);
+    top: 10px;
+    margin-top: 20px;
+}
+
+.card-img-top {
+    width: auto;
+    align-items: center;
+}
+
+.card-bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.card {
+    width: 400px;
+}
+
+@media (min-width: 780px) {
+     .especialidades {
+        padding-bottom: 10px;
+        margin: 20px;
+     }
+    
+    .titulo-especialidades {
+        margin: 0;
+        position: sticky;
+        text-align: center;
+}
+    
+    .especialidad1 {
+        width: 45%;
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .titulo-especialidades-con-bootstrap {
+        margin-top: 20px;
+        position: sticky;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*BLOG*/
+.blog-de-proyectos {
+    padding-top: 90px;
+    background-color: rgb(160, 163, 172);
+    width: 100%;
+    padding: 5px 5px;
+    align-items: center;
+}
+
+.titulo-blog {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-top: 0.5px;
+}
+
+.blog-de-proyectos ul {
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: center;
+    padding: 10px;
+}
+
+.blog-grid {
+    margin: 30px;
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "c1 c1 c1 c1 c1"
+    "c2 c2 c2 c3 c3"
+    "c2 c2 c2 c3 c3"
+    "c4 c4 c5 c8 c8"
+    "c6 c7 c5 c8 c8";
+    gap: 5px;
+}
+
+.blog-de-proyectos li {
+    display: block;
+    flex-direction: row;
+    background-color: bisque;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.titulo-prueba-blog {
+    text-align: center;
+}
+
+.caja {
+    border: 1px solid #000000;
+    text-align: center;
+    gap: 15px;
+}
+
+.c1 {
+    grid-area: c1;
+    background-color: #64adfc;
+}
+
+.c2 {
+    grid-area: c2;
+    background-color: aliceblue;
+}
+
+.c3 {
+    grid-area: c3;
+    background-color: aquamarine;
+}
+
+.c4 {
+    grid-area: c4;
+    background-color: bisque;
+}
+
+.c5 {
+    grid-area: c5;
+    background-color: rgb(182, 114, 12);
+}
+
+.c6 {
+    grid-area: c6;
+    background-color: cadetblue;
+}
+
+.c7 {
+    grid-area: c7;
+    background-color: brown;
+}
+
+.c8 {
+    grid-area: c8;
+    background-color: burlywood;
+}
+
+@media (max-width: 780px) {
+    .main {
+        padding: 20px;
+    }
+    
+    .blog-grid {
+        display: inline;
+        background-color:#ccc;
+
+    }
+
+    .blog-de-proyectos ul {
+        display: flex;
+    }
+
+    .blog-de-proyectos li {
+        margin: 180px;
+    }
+
+    .caja {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 781px) {
+    .blog-grid {
+        height: 800px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+/* PRECIOS */
+.titulo-precios {
+    padding: 5px 5px;
+    margin: 0px;
+    background-color: rgb(160, 163, 172);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.precios {
+    display: grid;
+    background-color: rgb(160, 163, 172);
+    grid-template-columns: repeat(6, 130px);
+    gap: 5px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.columna {
+    display: flex;
+    border: 1px solid #000000;
+    padding: 5px;
+    align-items: center;
+    background-color: #64adfc;
+    color: white;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.titulo-precios-bootstrap {
+    text-align: center;
+    margin: 15px;
+}
+
+.tabla-bootstrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    gap: 30px;
+    justify-content: center;
+    margin: 60px;
+}
+
+.card {
+    width: 400px;
+}
+
+.table {
+    width: 940px;
+}
+
+.col {
+    width: 40px;
+}
+
+#columna12 {
+    width: 60px;
+}
+
+
+
+
+/*CONTACTO*/
+.introduccion-contacto {
+    padding: 25px;
+    background-color: rgb(211, 212, 216);
+}
+
+.titulo-contacto {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+}
+
+.campos-contacto {
+    background-color: rgb(187, 176, 176)
+}
+
+.camps {
+    color: white;
+    padding: 30px;
+}
+
+.titulo-contacto-bootstrap {
+    text-align: center;
+    margin: 15px;
+}
+
+.contacto-bootstrap {
+    padding: 30px;
+}
+
+
+
+
+
+
+/* BOOTSTRAP */
+
+
+
+
+
+
+
+
+/*PRUEBA*/
+.flex-container { display: flex; } .item { padding: 80px; background-color: lightcoral; margin: 20px;}
+
+.flex-container-1 {
+    display: flex;
+}
+.item {
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.flex-container-2 {
+    display: flex;
+    width: 300px;
+}
+.item {
+    width: 200px;
+    padding: 10px;
+    background-color: lightgreen;
+    margin: 5px;
+}
+
+.flex-container {
+    display: flex;
+}
+.item {
+    padding: 10px;
+    background-color: lightpink;
+    margin: 5px;
+}
+
+/* Modificador del bloque */
+.profile-card--featured {
+  border-color: gold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modificador del elemento */
+.profile-card--button--disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+

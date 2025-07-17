@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto RedInnova</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+</head>
+    <body class="body">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+    <header class="header">
+            <nav class="navegador">
+                <ul>
+                    <li><a href="/index.html">HOME</a></il>
+                    <li><a href="/pages/nosotros.html">REDINNOVA</a></li>
+                    <li><a href="/pages/especialidades.html">SERVICIOS</a></li>
+                    <li><a href="/pages/blog.html">BLOG</a></li>
+                    <li><a href="/pages/precios.html">PRECIOS</a></li>
+                    <li><a href="/pages/contacto.html">CONTACTO</a></li>
+                    <li><a href="/pages/bootstrap.html">Bootstrap</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="introduccion-contacto">
+                <h1 class="titulo-contacto">CONTÁCTANOS</h1>
+                <div>Correo: andres.becerra13@hotmail.com</div>
+                <div>Contato: 3106299532</div>
+                <p>Dejanos tus datos y te <em><strong>contactaremos</strong></em> para ayudarte</p>
+            <section class="campos-contacto">
+        <form class="camps" action="/submit" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre"><br>
+
+            <label for="numero">Número</label>
+            <input type="number" name="número" id="número"><br>
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña"><br>
+
+            <label for="descripcion">Descripción</label>
+            <textarea name="mensaje" id="descripcion"></textarea><br>
+
+            <label for="genero">Hombre</label>
+            <input type="radio" name="genero" id="genero"><br>
+
+            <label for="genero">Mujer</label>
+            <input type="radio" name="genero" id="genero"><br>
+
+            <label for="suscribirse">Suscribirse</label>
+            <input type="checkbox" name="suscribirse"><br>
+
+            <label for="pais">País</label>
+            <select name="" id="">
+                <option value="">Brasil</option>
+                <option value="">Colombia</option>
+                <option value="">Uruguay</option>
+            </select><br>
+            <label for="date">Fecha</label>
+            <input type="date"/><br>
+            <input type="submit" value="ENVIAR">
+        </form>
+        </section>
+    </section>
+
+    <h2 class="titulo-contacto-bootstrap">CONTACTO CON BOOTSTRAP</h2>
+    <section class="contacto-bootstrap">
+        
+        <div class="input-group mb-3">
+            <span class="input-group-text">Nombre</span>
+            <input type="text" class="form-control" placeholder="Ej.: Andrés Felipe" aria-label="Username">
+            <span class="input-group-text">Apellido</span>
+            <input type="text" class="form-control" placeholder="Ej. Becerra Rodríguez" aria-label="Server">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Contacto</span>
+            <input type="text" class="form-control">
+            <span class="input-group-text" id="basic-addon2">Correo electrónico</span>
+            <input type="text" class="form-control" placeholder="Ej.: andres.becerra13@hotmail.com" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+        </div>     
+
+        <div class="mb-3">
+            <label for="basic-url" class="form-label">Perfil profesional</label>
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" placeholder="Ej.: URL perfil de LinkedIn" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+            </div>
+            <div class="form-text" id="basic-addon4">Pueds colocar tu perfil de LinkedIn o tu página web si ya cuentas con ella.</div>
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">País</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Escoge...</option>
+                <option value="1">Colombia</option>
+                <option value="2">Brasil</option>
+                <option value="3">Argentina</option>
+            </select>
+            <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
+            <select class="form-select" id="inputGroupSelect01">
+                <option selected>Escoge...</option>
+                <option value="1">Hombre</option>
+                <option value="2">Mujer</option>
+                <option value="3">Prefiero no decir</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">¿En qué podemos ayudarte?</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+
+    </section>
+    </main>
+    <footer class="bg-light py-4">
+        <div class="container text-center"><p class="mb-0">&copy; 2025 Mi Plataforma. Todos los derechos reservados.</p></div>
+    </footer>
+</body>
+</html>
