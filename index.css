@@ -16,7 +16,7 @@
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -27,48 +27,97 @@
     top: 10px;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 80%;
-    list-style: none;
     z-index: 999;
     border: 1px solid #000000;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .navegador ul {
-    display: flex;
+    display: row;
     flex-wrap: wrap;
     list-style: none;
     justify-content: right;
-    width: 100%;
+    width: auto;
     margin: 10px;
+}
+
+.navegador li {
+    padding: 5px;
 }
 
 .logo {
     width: 60px;
-    margin-left: 20px;
-}
-
-@media (min-width: 780px) {
-.navegador ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 35px;;
-}
-
-.navegador li {
-    font-weight: 600;
-    background-color: white;
-}
+    justify-content: center;
+    justify-items: center;
 }
 
 .navegador a {
     color: black;
     text-decoration: none;
     display: block;
-    
 }
+
+@media (min-width: 780px) {
+
+.header {
+    justify-content: center;
+}
+
+.navegador {
+    display: flex;
+    flex-direction: row;
+    justify-content:baseline;
+}    
+
+.navegador ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+}
+
+.navegador li {
+    font-weight: 600;
+    background-color: white;
+    padding: 3px;
+}
+
+.navegador li:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    padding: 3px;
+}
+
+
+@media (max-widht: 780px) {
+
+.navegador {
+    display: flex;
+    flex-direction:row;
+    padding: 32px;
+    margin: 20px;
+    justify-content: center;
+    align-items: right;
+}
+
+.navegador ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-items: center;
+}
+
+.navegador li {
+    margin: 20px;
+    padding: 20px;
+}
+}
+
+
+
 
 
 
@@ -85,10 +134,10 @@
     width: 100%;
     max-width: 100%;
     margin: 1px;
-    background-image: url(fondo\ Home.jpeg);
+    background-image: url(fondoHome.png);
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    padding: 50px;
 }
 
 .titulo-introduccion {
@@ -117,7 +166,7 @@
 }
 
 .home-nosotros {
-    background-color: antiquewhite;
+    background-color: rgb(236, 236, 236);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -127,20 +176,11 @@
 
 .home-titulo-por-que-redinnova {
     margin: auto;
-    background-color: rgb(61, 50, 11);
+    color: #000000;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
-    color: white;
     padding: 10px;
-}
-
-.home-parrafo-por-que-redinnova {
-    padding: 25px;
-    background-color: rgb(90, 79, 38);
-    color: white;
-    margin: 20px;
-    text-align: justify;
 }
 
 .home-razones-por-que-redinnova { /*FALTA REPLICAR EN pc*/
@@ -149,14 +189,29 @@
     position: center;
     padding: 15px;
     text-align: center;
-    background-color: rgb(110, 102, 71);
+    background-color: rgb(255, 255, 255);
     margin: auto;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 70px;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    border-bottom: 4px solid #000000;
+}
+
+.home-razones-por-que-redinnova:hover {
+    background-color: #b1b1b1;
 }
     
+@media (max-width: 780px) {
+.home-parrafo-por-que-redinnova {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+}
+}   
+
 @media (min-width: 780px) {
-    .introduccion {
+.introduccion {
     place-items: center;
     padding: 90px;
     max-width: 100%;
@@ -164,8 +219,7 @@
     padding-bottom: 20px;
 }
 
-    .home-nosotros {
-    background-color: antiquewhite;
+.home-nosotros {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -176,11 +230,10 @@
 
 .home-titulo-por-que-redinnova {
     margin: auto;
-    background-color: rgb(61, 50, 11);
+    color: #000000;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
-    color: white;
     padding: 10px;
 }
 
@@ -190,6 +243,7 @@
     color: black;
     margin: 20px;
     text-align: justify;
+    border-radius: 20px;
 }
 
 .home-razones-por-que-redinnova {
@@ -204,10 +258,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.home-razones-por-que-redinnova:hover {
+    background-color: #b1b1b1;
 }
-
-.img {}
-
+}
 
 
 
