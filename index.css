@@ -281,18 +281,7 @@
     max-width: 100%;
     background-color: rgb(190, 193, 201);
     margin: 1px;
-}
-
-
-.nosotros-razones1 {
-    flex: 1 1 calc(100% - 10px);
-    flex-wrap: wrap;
-    background-color: rgb(223, 82, 82);
-    padding: 15px;
-    margin: 5px;
-    color: white;
-    text-align: center;
-    width: 90%;
+    border-radius: 10px;
 }
 
 .enlace-contacto-nosotros {
@@ -303,6 +292,7 @@
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .enlace-contacto-nosotros:hover {
@@ -321,8 +311,8 @@
 }
 
 .parrafo-nosotros {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 45px;
+    margin-left: 45px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -336,17 +326,46 @@
     padding: 15px;
 }
 
-.nosotros-razones {
+.nosotros-seccion-razones {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: column-reverse;
     align-items: center;
+    border-radius: 10px;
+}
+
+.nosotros-razones1 {
+    flex: 1 1 calc(100% - 10px);
+    flex-wrap: wrap;
+    padding: 15px;
+    margin: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 90%;
+    border: 1px solid #000000;
+}
+
+.nosotros-razones1:hover {
+    background-color: #666;
+    border: 3px solid #000000;
+    color: azure;
+}
+
+.boton-equipo {
+    display: grid;
+    justify-items: center;
+}
+
+.btn-success {
+    background-color: #000000;
+    margin: 40px;
 }
 
 @media (min-width: 780px) {
     .nosotros-razones1 {
-        width: 70%;;
+        width: 70%;
+        border-radius: 10px;
     }
 
     .titulo-nosotros {
@@ -354,10 +373,15 @@
     }    
 
     .enlace-contacto-nosotros {
-        width: 40%;
+        width: 70%;
     }
 }
 
+@media (max-width: 780px) {
+    .nosotros-razones1 {
+        border-radius: 10px;
+    }
+}
 
 
 
@@ -370,11 +394,12 @@
 .especialidades {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
     justify-content: center;
-    padding-top: 70px;
     padding-bottom: 20px;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
 }
 
 .titulo-especialidades {
@@ -383,8 +408,10 @@
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
     top: 80px;
-    margin: 20px;
+    margin: 50px;
     z-index: 999;
+    background-color: #25aa77;
+    border-radius: 20px;
 }
 
 .especialidad1 {
@@ -392,10 +419,13 @@
     place-content: center;
     border: 3px solid rgba(0, 0, 0, 0.486);
     text-align: left;
-    background-color: rgba(204, 222, 226, 0.733);
-    margin: 20px;
-    width: 100%;
+    background-color: rgba(238, 238, 238, 0.733);
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    max-width: 80%;
     border-radius: 20px;
+    font-size: smaller;
 }
 
 .titulo-especialidades-con-bootstrap {
@@ -405,8 +435,9 @@
     font-family: "Bebas Neue", sans-serif;
     background-color: rgb(48, 177, 177);
     top: 80px;
-    margin-top: 20px;
     z-index: 999;
+    margin: 50px;
+    border-radius: 20px;
 }
 
 .card-img-top {
@@ -418,12 +449,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    padding-top: 30px;
+    gap: 30px;
 }
 
 .card {
-    width: 400px;
+    width: 80%;
 }
 
 @media (min-width: 780px) {
@@ -433,7 +463,6 @@
      }
     
     .titulo-especialidades {
-        margin: 0;
         position: sticky;
         text-align: center;
 }
@@ -449,8 +478,19 @@
         position: sticky;
         text-align: center;
     }
+
+    .card {
+        max-width: 25%;
+        margin: 5px;
+    }
 }
 
+
+@media (max-width: 900px) {
+    .card {
+        max-width: 45%;
+    }
+}
 
 
 
@@ -642,7 +682,7 @@
 }
 
 .card {
-    width: 400px;
+    width: 40%;
 }
 
 .table {
