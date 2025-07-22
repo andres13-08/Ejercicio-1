@@ -197,7 +197,22 @@
 .home-razones-por-que-redinnova:hover {
     background-color: #b1b1b1;
 }
-    
+
+.carousel-dark-slide {
+    margin: 40px;
+    width: 60%;
+}
+
+.home-galeria {
+    max-width: auto;
+    width: 60%;
+}
+
+.d-block {
+    max-width: auto;
+    width: 60%;
+}
+
 @media (max-width: 780px) {
 .home-parrafo-por-que-redinnova {
     background-color: #ffffff;
@@ -275,9 +290,9 @@
     padding-bottom: 20px;
     width: auto;
     max-width: 100%;
-    background-color: rgb(190, 193, 201);
-    margin: 1px;
-    border-radius: 10px;
+    background-color: rgb(211, 211, 211);
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
 .enlace-contacto-nosotros {
@@ -439,6 +454,7 @@
 .card-img-top {
     width: auto;
     align-items: center;
+    opacity: 30%;
 }
 
 .card-bootstrap {
@@ -497,7 +513,9 @@
 
 /*BLOG*/
 .blog-de-proyectos {
-    background-color: rgb(160, 163, 172);
+    background-color: rgb(211, 211, 211);
+    border: 2px solid #000000;
+    border-radius: 5px;
     width: auto;
     margin: 20px;
     align-items: center;
@@ -636,7 +654,9 @@
 /* PRECIOS */
 .titulo-precios {
     padding: 120px 0px 50px 0px;
-    background-color: rgb(160, 163, 172);
+    background-color: rgb(211, 211, 211);
+    border: 2px solid #000000;
+    border-radius: 5px;
     display: block;
     text-align: center;
     font-weight: bold;
@@ -700,8 +720,10 @@
 
 /*CONTACTO*/
 .introduccion-contacto {
-    padding: 25px;
-    background-color: rgb(211, 212, 216);
+    padding: 120px 40px 50px 40px;
+    background-color: rgb(211, 211, 211);
+    border: 2px solid #000000;
+    border-radius: 5px; 
 }
 
 .titulo-contacto {
@@ -714,11 +736,12 @@
 }
 
 .campos-contacto {
-    background-color: rgb(187, 176, 176)
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
 .camps {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 30px;
 }
 
