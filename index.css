@@ -24,7 +24,7 @@
 
 .navegador {
     position: fixed;
-    top: 10px;
+    top: 20px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -41,10 +41,7 @@
     justify-content: right;
     width: auto;
     margin: 10px;
-}
-
-.navegador li {
-    padding: 5px;
+    padding: 0;
 }
 
 .logo {
@@ -97,7 +94,6 @@
 .navegador {
     display: flex;
     flex-direction:row;
-    padding: 32px;
     margin: 20px;
     justify-content: center;
     align-items: right;
