@@ -24,7 +24,7 @@
 
 .navegador {
     position: fixed;
-    top: 20px;
+    top: 50px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@
 @media (min-width: 780px) {
 
 .header {
-    justify-content: center;
+    justify-content: right;
 }
 
 .navegador {
@@ -145,7 +145,6 @@
     padding-bottom: 20px;
     width: 100%;
     max-width: 100%;
-    margin: 1px;
     background-image: url(fondoHome.png);
     background-size: cover;
     background-position: center;
@@ -434,7 +433,7 @@
     text-align: center;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
-    top: 80px;
+    top: 130px;
     margin: 50px;
     z-index: 999;
     background-color: #25aa77;
@@ -461,7 +460,7 @@
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
     background-color: rgb(48, 177, 177);
-    top: 80px;
+    top: 130px;
     z-index: 999;
     margin: 50px;
     border-radius: 20px;
@@ -629,10 +628,6 @@
 }
 
 @media (max-width: 780px) {
-    .main {
-        padding: 20px;
-    }
-    
     .blog-grid {
         display: inline;
         background-color:#ccc;
