@@ -277,7 +277,7 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     background-color: rgb(190, 193, 201);
     margin: 1px;
@@ -501,11 +501,11 @@
 
 /*BLOG*/
 .blog-de-proyectos {
-    padding-top: 90px;
     background-color: rgb(160, 163, 172);
-    width: 100%;
-    padding: 5px 5px;
+    width: auto;
+    margin: 20px;
     align-items: center;
+    padding-top: 20px;
 }
 
 .titulo-blog {
@@ -514,7 +514,7 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: bold;
     unicode-bidi: isolate;
-    margin-top: 0.5px;
+    margin-top: 80px;
 }
 
 .blog-de-proyectos ul {
@@ -559,42 +559,43 @@
 
 .c1 {
     grid-area: c1;
-    background-color: #64adfc;
+    background-color: #eeba89;
 }
 
 .c2 {
     grid-area: c2;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .c3 {
     grid-area: c3;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
 }
 
 .c4 {
     grid-area: c4;
-    background-color: bisque;
+    background-color: #eeba89;
 }
 
 .c5 {
     grid-area: c5;
-    background-color: rgb(182, 114, 12);
+    background-color: rgb(255, 255, 255);
 }
 
 .c6 {
     grid-area: c6;
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
 }
 
 .c7 {
     grid-area: c7;
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
 }
 
 .c8 {
     grid-area: c8;
-    background-color: burlywood;
+    background-color: rgb(104, 65, 15);
+    color: #ffffff;
 }
 
 @media (max-width: 780px) {
@@ -619,6 +620,7 @@
     .caja {
         margin: 10px;
     }
+
 }
 
 @media (min-width: 781px) {
@@ -637,34 +639,13 @@
 
 /* PRECIOS */
 .titulo-precios {
-    padding: 5px 5px;
-    margin: 0px;
+    padding: 120px 0px 50px 0px;
     background-color: rgb(160, 163, 172);
     display: block;
     text-align: center;
     font-weight: bold;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
-}
-.precios {
-    display: grid;
-    background-color: rgb(160, 163, 172);
-    grid-template-columns: repeat(6, 130px);
-    gap: 5px;
-    justify-content: center;
-    padding: 20px;
-}
-
-.columna {
-    display: flex;
-    border: 1px solid #000000;
-    padding: 5px;
-    align-items: center;
-    background-color: #64adfc;
-    color: white;
-    text-align: start;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
 }
 
 .titulo-precios-bootstrap {
@@ -696,6 +677,27 @@
 #columna12 {
     width: 60px;
 }
+
+.tabla1 {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.tabla1 th {
+    border: 1px solid #000000;
+    padding: 5px 5px;
+}
+
+.tabla1 td {
+    border: 1px solid #000000;
+    padding: 5px 5px;
+}
+
+
+
+
 
 
 
