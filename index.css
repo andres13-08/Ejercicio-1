@@ -88,6 +88,22 @@
     padding: 3px;
 }
 
+/*CSS para la hamburguesa del menú"*/
+.menu {
+  background-color: #e4d1d1;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.oculto {
+  display: none;
+}
+
+#menu-toggle {
+  padding: 10px;
+  cursor: pointer;
+
+}
 
 @media (max-widht: 780px) {
 
