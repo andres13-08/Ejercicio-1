@@ -78,8 +78,8 @@
 
 .navegador {
     display: flex;
-    flex-direction: row;
-    justify-content:baseline;
+    flex-direction: column;
+    justify-content:center;
 }    
 
 .navegador ul {
@@ -441,7 +441,7 @@
     font-family: "Bebas Neue", sans-serif;
     top: 50px;
     margin: 50px;
-    z-index: 999;
+    z-index: 998;
     background-color: #25aa77;
     border-radius: 20px;
 }
@@ -467,7 +467,7 @@
     font-family: "Bebas Neue", sans-serif;
     background-color: rgb(48, 177, 177);
     top: 50px;
-    z-index: 999;
+    z-index: 998;
     margin: 50px;
     border-radius: 20px;
 }
@@ -538,7 +538,6 @@
     border: 2px solid #000000;
     border-radius: 5px;
     width: auto;
-    margin: 20px;
     align-items: center;
     padding-top: 20px;
 }
