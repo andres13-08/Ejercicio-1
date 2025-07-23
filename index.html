@@ -12,10 +12,10 @@
     </head>
     <body class="body">
         <header class="header">
+            <button id="menu-toggle" class="menu-btn">☰ Menú</button>
+        </header>  
 
-            <button id="menu-toggle">☰ Menú</button>
-
-            <nav id="menu" class="navegador">
+            <nav id="menu" class="navegador oculto">
                 <a href="/index.html"><img src="/logo.png" class="logo" alt="logo soluciones digitales" a href="/index.html"></a>
                 <ul>
                     <li><a href="/index.html">HOME</a></li>
@@ -27,8 +27,8 @@
                     <li><a href="/pages/bootstrap.html">V. Bootstrap</a></li>
                 </ul>
             </nav>
-        </header>   
 
+        <!-- Esta parte la saqué con IA, pero no entendí mucho la lógica. Espero aprenderla más adelante. -->
         <script>
             const boton = document.getElementById('menu-toggle');
             const menu = document.getElementById('menu');

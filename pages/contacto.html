@@ -13,22 +13,21 @@
     <body class="body">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
     <header class="header">
+        <button id="menu-toggle" class="menu-btn">☰ Menú</button>
+    </header>  
 
-            <button id="menu-toggle">☰ Menú</button>
-
-            <nav id="menu" class="navegador">
-                <a href="/index.html"><img src="/logo.png" class="logo" alt="logo soluciones digitales" a href="/index.html"></a>
-                <ul>
-                    <li><a href="/index.html">HOME</a></li>
-                    <li><a href="/pages/nosotros.html">REDINNOVA</a></li>
-                    <li><a href="/pages/especialidades.html">SERVICIOS</a></li>
-                    <li><a href="/pages/blog.html">BLOG</a></li>
-                    <li><a href="/pages/precios.html">PRECIOS</a></li>
-                    <li><a href="/pages/contacto.html">CONTACTO</a></li>
-                    <li><a href="/pages/bootstrap.html">V. Bootstrap</a></li>
-                </ul>
-            </nav>
-        </header>   
+        <nav id="menu" class="navegador oculto">
+            <a href="/index.html"><img src="/logo.png" class="logo" alt="logo soluciones digitales" a href="/index.html"></a>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/pages/nosotros.html">REDINNOVA</a></li>
+                <li><a href="/pages/especialidades.html">SERVICIOS</a></li>
+                <li><a href="/pages/blog.html">BLOG</a></li>
+                <li><a href="/pages/precios.html">PRECIOS</a></li>
+                <li><a href="/pages/contacto.html">CONTACTO</a></li>
+                <li><a href="/pages/bootstrap.html">V. Bootstrap</a></li>
+            </ul>
+        </nav>   
 
         <script>
             const boton = document.getElementById('menu-toggle');

@@ -15,33 +15,48 @@
 }
 
 .header {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    z-index: 1000;
+    background-color: white;
+}
+
+.menu-btn {
+  border: 1px solid orange;
+  background-color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.menu-btn:hover {
+    border: 1px solid #222324;
+    background-color: #25aa77;
 }
 
 .navegador {
-    position: fixed;
-    top: 50px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 999;
-    border: 1px solid #000000;
-    border-radius: 10px;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 999;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .navegador ul {
-    display: row;
-    flex-wrap: wrap;
-    list-style: none;
-    justify-content: right;
-    width: auto;
-    margin: 10px;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -57,9 +72,8 @@
 }
 
 @media (min-width: 780px) {
-
 .header {
-    justify-content: right;
+    justify-content: center;
 }
 
 .navegador {
@@ -89,20 +103,12 @@
 }
 
 /*CSS para la hamburguesa del menú"*/
-.menu {
-  background-color: #e4d1d1;
-  padding: 10px;
-  transition: all 0.3s ease;
-}
-
 .oculto {
   display: none;
 }
 
 #menu-toggle {
-  padding: 10px;
   cursor: pointer;
-
 }
 
 @media (max-widht: 780px) {
@@ -433,7 +439,7 @@
     text-align: center;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
-    top: 130px;
+    top: 50px;
     margin: 50px;
     z-index: 999;
     background-color: #25aa77;
@@ -460,7 +466,7 @@
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
     background-color: rgb(48, 177, 177);
-    top: 130px;
+    top: 50px;
     z-index: 999;
     margin: 50px;
     border-radius: 20px;
