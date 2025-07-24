@@ -15,16 +15,25 @@
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    z-index: 1000;
+    display: flex; /*Define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos*/
+    justify-content: space-between;
+    position: fixed; /*Con esta etiqueta, puedo dejar un elemento fijo en la pantalla. como el menú*/ 
+    top: 0; /*Se le da la altura al deader, como para que qiede más pegada borde o flotante*/ 
+    width: 100%;
+    z-index: 1000; /*Para dejar fijo en la pantalla, sobreponiendo uno sobre el otro al bajar 999, luego 998, etc.*/
     background-color: white;
+    padding: /*ARRIBA*/ 0px /*DERECHA*/ 10px /*ABAJO*/ 0px /*IZQUIERDA*/ 25px;
+}
+
+.titulo-header {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .menu-btn {
-  border: 1px solid orange;
+  border: 1px solid rgb(255, 166, 0);
   background-color: white;
   padding: 8px 12px;
   cursor: pointer;
@@ -34,17 +43,17 @@
 
 .menu-btn:hover {
     border: 1px solid #222324;
-    background-color: #25aa77;
+    background-color: #21b17a;
 }
 
 .navegador {
-  position: fixed;
-  top: 50px;
-  right: 10px;
+  display: flex; /*Define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos*/
+  flex-direction: row; /*Los elementos se colocan en una columna vertical.*/
+  position: fixed; /*Posiciona el elemento en relación con la ventana del navegador. El elemento se mantiene en la misma posición incluso cuando se desplaza la página.*/
+  top: 50px; /*Define la altura a la que va a estar siempre el elemento. Entre más alto el número, más se baja el elemento*/
+  right: 10px; /*Define la posición horizontal a la que va a estar siempre el elemento. Entre más alto el número, el elemento más se va  la izquierda*/
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center; /*alinea los elementos flexibles a lo largo del eje transversal (perpendicular al eje principal) del contenedor.*/
   z-index: 999;
   border: 1px solid #000;
   border-radius: 10px;
@@ -72,14 +81,10 @@
 }
 
 @media (min-width: 780px) {
-.header {
-    justify-content: center;
-}
-
 .navegador {
     display: flex;
-    flex-direction: column;
-    justify-content:center;
+    flex-direction: row;
+    justify-content: center;
 }    
 
 .navegador ul {
@@ -88,6 +93,19 @@
     gap: 10px;
 }
 }
+
+/*CSS para la hamburguesa del menú"*/
+.oculto {
+  display: none;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+#menu-toggle:hover {
+    background-color: rgb(255, 144, 144); /*Esto me ayuda a definir el fondo del botón cuando paso el mouse por encima*/
+} 
 
 .navegador li {
     font-weight: 600;
@@ -100,15 +118,6 @@
     border-radius: 10px;
     border: 1px solid #000000;
     padding: 3px;
-}
-
-/*CSS para la hamburguesa del menú"*/
-.oculto {
-  display: none;
-}
-
-#menu-toggle {
-  cursor: pointer;
 }
 
 @media (max-widht: 780px) {
@@ -232,6 +241,12 @@
 .d-block {
     max-width: auto;
     width: 60%;
+}
+
+@media (min-width: 247px) {
+    .home-razones-por-que-redinnova {
+    height: 100px; /*Me ayuda con el ancho de los rcuadros d las razones, para que todo el texto quede dentro. Esto aplica para pantallas con menos de 247PX.*/
+    }
 }
 
 @media (max-width: 780px) {
@@ -560,6 +575,7 @@
 
 .blog-grid {
     margin: 30px;
+    margin-bottom: 50px;
     padding: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -570,6 +586,7 @@
     "c4 c4 c5 c8 c8"
     "c6 c7 c5 c8 c8";
     gap: 5px;
+    height: 100px;
 }
 
 .blog-de-proyectos li {
@@ -636,7 +653,6 @@
     .blog-grid {
         display: inline;
         background-color:#ccc;
-
     }
 
     .blog-de-proyectos ul {
@@ -650,6 +666,8 @@
     .caja {
         margin: 10px;
     }
+
+
 
 }
 
