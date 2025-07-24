@@ -693,7 +693,7 @@
 /* PRECIOS */
 .main-precios {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .titulo-precios {
