@@ -691,6 +691,11 @@
 
 
 /* PRECIOS */
+.main-precios {
+    display: flex;
+    flex-direction: row;
+}
+
 .titulo-precios {
     padding: 120px 0px 50px 0px;
     background-color: rgb(211, 211, 211);
