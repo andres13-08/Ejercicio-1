@@ -306,7 +306,7 @@
 }
 
 .home-razones-por-que-redinnova:hover {
-    background-color: #b1b1b1;
+    background-color: #dbdbdb;
 }
 }
 
@@ -370,6 +370,12 @@
     unicode-bidi: isolate;
     font-family: "Bebas Neue", sans-serif;
     padding: 15px;
+}
+
+.titulo-por-que-redinnova:hover {
+    font-size: 70px;
+    background-color: #64e92f;
+    font-weight: bold;
 }
 
 .nosotros-seccion-razones {
@@ -737,6 +743,8 @@
 .tabla1 th {
     border: 1px solid #000000;
     padding: 5px 5px;
+    border-radius: 15px;
+
 }
 
 .tabla1 td {
@@ -771,6 +779,12 @@
 .campos-contacto {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+}
+
+.boton-enviar:hover {
+    font-size: 70px;
+    background-color: #64e92f;
+    font-weight: bold;
 }
 
 .camps {
