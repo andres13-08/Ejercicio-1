@@ -30,6 +30,8 @@
     align-items: center;
     font-size: 25px;
     font-weight: bold;
+    color: #000000;
+    text-decoration: none;
 }
 
 .menu-btn {
@@ -335,7 +337,7 @@
     background-color: rgba(0, 0, 0, 0.486);
     font-weight: bold;
     padding: 10px;
-    width: 70%;
+    width: 60%;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -425,7 +427,7 @@
     }    
 
     .enlace-contacto-nosotros {
-        width: 70%;
+        width: 40%;
     }
 }
 
@@ -765,6 +767,7 @@
 
 
 /*CONTACTO*/
+
 .introduccion-contacto {
     padding: 120px 40px 50px 40px;
     background-color: rgb(211, 211, 211);
@@ -804,65 +807,7 @@
 
 .contacto-bootstrap {
     padding: 30px;
+    height: auto;
 }
-
-
-
-
-
 
 /* BOOTSTRAP */
-
-
-
-
-
-
-
-
-/*PRUEBA*/
-.flex-container { display: flex; } .item { padding: 80px; background-color: lightcoral; margin: 20px;}
-
-.flex-container-1 {
-    display: flex;
-}
-.item {
-    padding: 10px;
-    background-color: lightblue;
-    margin: 5px;
-}
-
-.flex-container-2 {
-    display: flex;
-    width: 300px;
-}
-.item {
-    width: 200px;
-    padding: 10px;
-    background-color: lightgreen;
-    margin: 5px;
-}
-
-.flex-container {
-    display: flex;
-}
-.item {
-    padding: 10px;
-    background-color: lightpink;
-    margin: 5px;
-}
-
-/* Modificador del bloque */
-.profile-card--featured {
-  border-color: gold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Modificador del elemento */
-.profile-card--button--disabled {
-  background-color: #ccc;
-  color: #666;
-  cursor: not-allowed;
-}
-
-
