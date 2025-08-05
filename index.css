@@ -1,37 +1,37 @@
+@charset "UTF-8";
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*MENÚ*/
-
 .body {
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
 }
 
 .main {
-    margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .header {
-    display: flex; /*Define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos*/
-    justify-content: space-between;
-    position: fixed; /*Con esta etiqueta, puedo dejar un elemento fijo en la pantalla. como el menú*/ 
-    top: 0; /*Se le da la altura al deader, como para que qiede más pegada borde o flotante*/ 
-    width: 100%;
-    z-index: 1000; /*Para dejar fijo en la pantalla, sobreponiendo uno sobre el otro al bajar 999, luego 998, etc.*/
-    background-color: white;
-    padding: /*ARRIBA*/ 0px /*DERECHA*/ 10px /*ABAJO*/ 0px /*IZQUIERDA*/ 25px;
+  display: flex; /*Define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos*/
+  justify-content: space-between;
+  position: fixed; /*Con esta etiqueta, puedo dejar un elemento fijo en la pantalla. como el menú*/
+  top: 0; /*Se le da la altura al deader, como para que qiede más pegada borde o flotante*/
+  width: 100%;
+  z-index: 1000; /*Para dejar fijo en la pantalla, sobreponiendo uno sobre el otro al bajar 999, luego 998, etc.*/
+  background-color: white;
+  padding: 0px 10px 0px 25px;
 }
 
 .titulo-header {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
 }
 
 .menu-btn {
@@ -44,8 +44,8 @@
 }
 
 .menu-btn:hover {
-    border: 1px solid #222324;
-    background-color: #21b17a;
+  border: 1px solid #222324;
+  background-color: #21b17a;
 }
 
 .navegador {
@@ -71,31 +71,29 @@
 }
 
 .logo {
-    width: 60px;
-    justify-content: center;
-    justify-items: center;
+  width: 60px;
+  justify-content: center;
+  justify-items: center;
 }
 
 .navegador a {
-    color: black;
-    text-decoration: none;
-    display: block;
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 
 @media (min-width: 780px) {
-.navegador {
+  .navegador {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}    
-
-.navegador ul {
+  }
+  .navegador ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+  }
 }
-}
-
 /*CSS para la hamburguesa del menú"*/
 .oculto {
   display: none;
@@ -106,195 +104,176 @@
 }
 
 #menu-toggle:hover {
-    background-color: rgb(255, 144, 144); /*Esto me ayuda a definir el fondo del botón cuando paso el mouse por encima*/
-} 
+  background-color: rgb(255, 144, 144); /*Esto me ayuda a definir el fondo del botón cuando paso el mouse por encima*/
+}
 
 .navegador li {
-    font-weight: 600;
-    background-color: white;
-    padding: 3px;
+  font-weight: 600;
+  background-color: white;
+  padding: 3px;
 }
 
 .navegador li:hover {
-    cursor: pointer;
-    border-radius: 10px;
-    border: 1px solid #000000;
-    padding: 3px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding: 3px;
 }
 
 @media (max-widht: 780px) {
-
-.navegador {
+  .navegador {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     margin: 20px;
     justify-content: center;
     align-items: right;
-}
-
-.navegador ul {
+  }
+  .navegador ul {
     display: flex;
     flex-wrap: wrap;
     gap: 35px;
     justify-items: center;
-}
-
-.navegador li {
+  }
+  .navegador li {
     margin: 20px;
     padding: 20px;
+  }
 }
-}
-
-
-
-
-
-
-
-
-
-
-/*HOME*/ 
+/*HOME*/
 /*HOME INTRODUCCIÓN*/
 .introduccion {
-    place-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    max-width: 100%;
-    background-image: url(fondoHome.png);
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
+  place-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(fondoHome.png);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
 }
 
 .titulo-introduccion {
-    color: black;
-    font-size: 50px;
-    font-family: "Bebas Neue", sans-serif;
-    align-content: center;
-    text-align: center;
-    margin-top: 60px;
-   }
+  color: black;
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  align-content: center;
+  text-align: center;
+  margin-top: 60px;
+}
 
 .parrafo-introduccion {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px;
-    margin-bottom: 30px;
-    font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .enlace-servicios {
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
 }
 
 .home-nosotros {
-    background-color: rgb(236, 236, 236);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .home-titulo-por-que-redinnova {
-    margin: auto;
-    color: #000000;
-    text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 30px;
-    padding: 10px;
+  margin: auto;
+  color: #000000;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  padding: 10px;
 }
 
 .home-razones-por-que-redinnova { /*FALTA REPLICAR EN pc*/
-    flex: 1 1 calc(100% - 10px);
-    box-sizing: border-box;
-    position: center;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    color: rgb(0, 0, 0);
-    height: 60px;
-    border-radius: 20px;
-    border: 1px solid #000000;
-    border-bottom: 4px solid #000000;
+  flex: 1 1 calc(100% - 10px);
+  box-sizing: border-box;
+  position: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  color: rgb(0, 0, 0);
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  border-bottom: 4px solid #000000;
 }
 
 .home-razones-por-que-redinnova:hover {
-    background-color: #b1b1b1;
+  background-color: #b1b1b1;
 }
 
 .carousel-dark-slide {
-    margin: 40px;
-    width: 60%;
+  margin: 40px;
+  width: 60%;
 }
 
 .home-galeria {
-    max-width: auto;
-    width: 60%;
+  max-width: auto;
+  width: 60%;
 }
 
 .d-block {
-    max-width: auto;
-    width: 60%;
+  max-width: auto;
+  width: 60%;
 }
 
 @media (min-width: 247px) {
-    .home-razones-por-que-redinnova {
+  .home-razones-por-que-redinnova {
     height: 60px; /*Me ayuda con el ancho de los rcuadros d las razones, para que todo el texto quede dentro. Esto aplica para pantallas con menos de 247PX.*/
-    }
+  }
 }
-
 @media (max-width: 780px) {
-.home-parrafo-por-que-redinnova {
+  .home-parrafo-por-que-redinnova {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
+  }
 }
-}   
-
 @media (min-width: 780px) {
-.introduccion {
+  .introduccion {
     place-items: center;
     padding: 90px;
     max-width: 100%;
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
-}
-
-.home-nosotros {
+  }
+  .home-nosotros {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     max-width: 100%;
     margin-top: 20px;
     padding-top: 20px;
-}
-
-.home-titulo-por-que-redinnova {
+  }
+  .home-titulo-por-que-redinnova {
     margin: auto;
     color: #000000;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     padding: 10px;
-}
-
-.home-parrafo-por-que-redinnova {
+  }
+  .home-parrafo-por-que-redinnova {
     padding: 25px;
     background-color: white;
     color: black;
     margin: 20px;
     text-align: justify;
     border-radius: 20px;
-}
-
-.home-razones-por-que-redinnova {
+  }
+  .home-razones-por-que-redinnova {
     flex: 0 0 calc(50% - 5px);
     position: center;
     padding: 20px;
@@ -305,509 +284,617 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-}
-
-.home-razones-por-que-redinnova:hover {
+  }
+  .home-razones-por-que-redinnova:hover {
     background-color: #dbdbdb;
+  }
 }
-}
-
-
-
-
-
-
-
-
-
 /*NOSOTROS*/
 .nosotros {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: auto;
-    max-width: 100%;
-    background-color: rgb(211, 211, 211);
-    border: 2px solid #000000;
-    border-radius: 5px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  max-width: 100%;
+  background-color: rgb(211, 211, 211);
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 
 .enlace-contacto-nosotros {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.486);
-    font-weight: bold;
-    padding: 10px;
-    width: 60%;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.486);
+  font-weight: bold;
+  padding: 10px;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .enlace-contacto-nosotros:hover {
-    background-color: #222324;
-    color:brown;
+  background-color: #222324;
+  color: brown;
 }
 
 .titulo-nosotros {
-    display: block;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: 100px;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 100px;
 }
 
 .parrafo-nosotros {
-    margin-right: 45px;
-    margin-left: 45px;
-    line-height: 1.5;
-    text-align: justify;
+  margin-right: 45px;
+  margin-left: 45px;
+  line-height: 1.5;
+  text-align: justify;
 }
 
 .titulo-por-que-redinnova {
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    font-family: "Bebas Neue", sans-serif;
-    padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 15px;
 }
 
 .titulo-por-que-redinnova:hover {
-    font-size: 70px;
-    background-color: #64e92f;
-    font-weight: bold;
+  font-size: 70px;
+  background-color: #64e92f;
+  font-weight: bold;
 }
 
 .nosotros-seccion-razones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: column-reverse;
-    align-items: center;
-    border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .nosotros-razones1 {
-    flex: 1 1 calc(100% - 10px);
-    flex-wrap: wrap;
-    padding: 15px;
-    margin: 5px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    width: 90%;
-    border: 1px solid #000000;
+  flex: 1 1 calc(100% - 10px);
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 90%;
+  border: 1px solid #000000;
 }
 
 .nosotros-razones1:hover {
-    background-color: #666;
-    border: 3px solid #000000;
-    color: azure;
+  background-color: #666;
+  border: 3px solid #000000;
+  color: azure;
 }
 
 .boton-equipo {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .btn-success {
-    background-color: #000000;
-    margin: 40px;
+  background-color: #000000;
+  margin: 40px;
 }
 
 @media (min-width: 780px) {
-    .nosotros-razones1 {
-        width: 70%;
-        border-radius: 10px;
-    }
-
-    .titulo-nosotros {
-        margin-top: 100px;
-    }    
-
-    .enlace-contacto-nosotros {
-        width: 40%;
-    }
+  .nosotros-razones1 {
+    width: 70%;
+    border-radius: 10px;
+  }
+  .titulo-nosotros {
+    margin-top: 100px;
+  }
+  .enlace-contacto-nosotros {
+    width: 40%;
+  }
 }
-
 @media (max-width: 780px) {
-    .nosotros-razones1 {
-        border-radius: 10px;
-    }
+  .nosotros-razones1 {
+    border-radius: 10px;
+  }
 }
-
-
-
-
-
-
-
-
 /*SERVICIOS*/
 .especialidades {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    padding-bottom: 20px;
-    width: auto;
-    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: auto;
+  max-width: 100%;
 }
 
 .titulo-especialidades {
-    position: sticky;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    top: 50px;
-    margin: 50px;
-    z-index: 998;
-    background-color: #25aa77;
-    border-radius: 20px;
+  position: sticky;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  top: 50px;
+  margin: 50px;
+  z-index: 998;
+  background-color: #25aa77;
+  border-radius: 20px;
 }
 
 .especialidad1 {
-    display: inline-block;
-    place-content: center;
-    border: 3px solid rgba(0, 0, 0, 0.486);
-    text-align: left;
-    background-color: rgba(238, 238, 238, 0.733);
-    margin: 10px;
-    padding: 10px;
-    width: auto;
-    max-width: 80%;
-    border-radius: 20px;
-    font-size: smaller;
+  display: inline-block;
+  place-content: center;
+  border: 3px solid rgba(0, 0, 0, 0.486);
+  text-align: left;
+  background-color: rgba(238, 238, 238, 0.733);
+  margin: 10px;
+  padding: 10px;
+  width: auto;
+  max-width: 80%;
+  border-radius: 20px;
+  font-size: smaller;
 }
 
 .titulo-especialidades-con-bootstrap {
-    position: sticky;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    background-color: rgb(48, 177, 177);
-    top: 50px;
-    z-index: 998;
-    margin: 50px;
-    border-radius: 20px;
+  position: sticky;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: rgb(48, 177, 177);
+  top: 50px;
+  z-index: 998;
+  margin: 50px;
+  border-radius: 20px;
 }
 
 .card-img-top {
-    width: auto;
-    align-items: center;
-    opacity: 30%;
+  width: auto;
+  align-items: center;
+  opacity: 30%;
 }
 
 .card-bootstrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .card {
-    width: 80%;
+  width: 80%;
 }
 
 @media (min-width: 780px) {
-     .especialidades {
-        padding-bottom: 10px;
-        margin: 20px;
-     }
-    
-    .titulo-especialidades {
-        position: sticky;
-        text-align: center;
+  .especialidades {
+    padding-bottom: 10px;
+    margin: 20px;
+  }
+  .titulo-especialidades {
+    position: sticky;
+    text-align: center;
+  }
+  .especialidad1 {
+    width: 45%;
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .titulo-especialidades-con-bootstrap {
+    margin-top: 20px;
+    position: sticky;
+    text-align: center;
+  }
+  .card {
+    max-width: 25%;
+    margin: 5px;
+  }
 }
-    
-    .especialidad1 {
-        width: 45%;
-        font-size: 12px;
-        padding: 0 5px;
-    }
-
-    .titulo-especialidades-con-bootstrap {
-        margin-top: 20px;
-        position: sticky;
-        text-align: center;
-    }
-
-    .card {
-        max-width: 25%;
-        margin: 5px;
-    }
-}
-
-
 @media (max-width: 900px) {
-    .card {
-        max-width: 45%;
-    }
+  .card {
+    max-width: 45%;
+  }
 }
-
-
-
-
-
-
-
-
 /*BLOG*/
 .blog-de-proyectos {
-    background-color: rgb(211, 211, 211);
-    border: 2px solid #000000;
-    border-radius: 5px;
-    width: auto;
-    align-items: center;
-    padding-top: 20px;
+  background-color: rgb(211, 211, 211);
+  border: 2px solid #000000;
+  border-radius: 5px;
+  width: auto;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .titulo-blog {
-    text-align: center;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    margin-top: 80px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  margin-top: 80px;
 }
 
 .blog-de-proyectos ul {
-    flex-wrap: wrap;
-    flex-basis: auto;
-    justify-content: center;
-    padding: 10px;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: center;
+  padding: 10px;
 }
 
 .blog-grid {
-    margin: 30px;
-    margin-bottom: 50px;
-    padding: auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
-    "c1 c1 c1 c1 c1"
-    "c2 c2 c2 c3 c3"
-    "c2 c2 c2 c3 c3"
-    "c4 c4 c5 c8 c8"
-    "c6 c7 c5 c8 c8";
-    gap: 5px;
-    height: 100px;
+  margin: 30px;
+  margin-bottom: 50px;
+  padding: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "c1 c1 c1 c1 c1" "c2 c2 c2 c3 c3" "c2 c2 c2 c3 c3" "c4 c4 c5 c8 c8" "c6 c7 c5 c8 c8";
+  gap: 5px;
+  height: 100px;
 }
 
 .blog-de-proyectos li {
-    display: block;
-    flex-direction: row;
-    background-color: bisque;
-    margin: 10px;
-    padding: 50px;
-    text-align: center;
+  display: block;
+  flex-direction: row;
+  background-color: bisque;
+  margin: 10px;
+  padding: 50px;
+  text-align: center;
 }
 
 .titulo-prueba-blog {
-    text-align: center;
+  text-align: center;
 }
 
 .caja {
-    border: 1px solid #000000;
-    text-align: center;
-    gap: 15px;
+  border: 1px solid #000000;
+  text-align: center;
+  gap: 15px;
 }
 
 .c1 {
-    grid-area: c1;
-    background-color: #eeba89;
+  grid-area: c1;
+  background-color: #eeba89;
 }
 
 .c2 {
-    grid-area: c2;
-    background-color: rgb(255, 255, 255);
+  grid-area: c2;
+  background-color: rgb(255, 255, 255);
 }
 
 .c3 {
-    grid-area: c3;
-    background-color: rgb(255, 255, 255);
+  grid-area: c3;
+  background-color: rgb(255, 255, 255);
 }
 
 .c4 {
-    grid-area: c4;
-    background-color: #eeba89;
+  grid-area: c4;
+  background-color: #eeba89;
 }
 
 .c5 {
-    grid-area: c5;
-    background-color: rgb(255, 255, 255);
+  grid-area: c5;
+  background-color: rgb(255, 255, 255);
 }
 
 .c6 {
-    grid-area: c6;
-    background-color: rgb(255, 255, 255);
+  grid-area: c6;
+  background-color: rgb(255, 255, 255);
 }
 
 .c7 {
-    grid-area: c7;
-    background-color: rgb(255, 255, 255);
+  grid-area: c7;
+  background-color: rgb(255, 255, 255);
 }
 
 .c8 {
-    grid-area: c8;
-    background-color: rgb(104, 65, 15);
-    color: #ffffff;
+  grid-area: c8;
+  background-color: rgb(104, 65, 15);
+  color: #ffffff;
 }
 
 @media (max-width: 780px) {
-    .blog-grid {
-        display: inline;
-        background-color:#ccc;
-    }
-
-    .blog-de-proyectos ul {
-        display: flex;
-    }
-
-    .blog-de-proyectos li {
-        margin: 180px;
-    }
-
-    .caja {
-        margin: 10px;
-    }
-
-
-
+  .blog-grid {
+    display: inline;
+    background-color: #ccc;
+  }
+  .blog-de-proyectos ul {
+    display: flex;
+  }
+  .blog-de-proyectos li {
+    margin: 180px;
+  }
+  .caja {
+    margin: 10px;
+  }
 }
-
 @media (min-width: 781px) {
-    .blog-grid {
-        height: 800px;
-    }    
+  .blog-grid {
+    height: 800px;
+  }
 }
-
-
-
-
-
-
-
-
-
 /* PRECIOS */
 .main-precios {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .titulo-precios {
-    padding: 120px 0px 50px 0px;
-    background-color: rgb(211, 211, 211);
-    border: 2px solid #000000;
-    border-radius: 5px;
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
+  padding: 120px 0px 50px 0px;
+  background-color: rgb(211, 211, 211);
+  border: 2px solid #000000;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .titulo-precios-bootstrap {
-    text-align: center;
-    margin: 15px;
+  text-align: center;
+  margin: 15px;
 }
 
 .tabla-bootstrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    gap: 30px;
-    justify-content: center;
-    margin: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  gap: 30px;
+  justify-content: center;
+  margin: 60px;
 }
 
 .card {
-    width: 40%;
+  width: 40%;
 }
 
 .table {
-    width: 940px;
+  width: 940px;
 }
 
 .col {
-    width: 40px;
+  width: 40px;
 }
 
 #columna12 {
-    width: 60px;
+  width: 60px;
 }
 
 .tabla1 {
-    display: grid;
-    justify-content: center;
-    margin: 20px;
-    margin-bottom: 50px;
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
 .tabla1 th {
-    border: 1px solid #000000;
-    padding: 5px 5px;
-    border-radius: 15px;
-
+  border: 1px solid #000000;
+  padding: 5px 5px;
+  border-radius: 15px;
 }
 
 .tabla1 td {
-    border: 1px solid #000000;
-    padding: 5px 5px;
+  border: 1px solid #000000;
+  padding: 5px 5px;
 }
 
-
-
-
-
-
-
-
 /*CONTACTO*/
-
 .introduccion-contacto {
-    padding: 120px 40px 50px 40px;
-    background-color: rgb(211, 211, 211);
-    border: 2px solid #000000;
-    border-radius: 5px; 
+  padding: 120px 40px 50px 40px;
+  background-color: rgb(211, 211, 211);
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 
 .titulo-contacto {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    margin: 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
 }
 
 .campos-contacto {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
 }
 
 .boton-enviar:hover {
-    font-size: 70px;
-    background-color: #64e92f;
-    font-weight: bold;
+  font-size: 70px;
+  background-color: #64e92f;
+  font-weight: bold;
 }
 
 .camps {
-    color: rgb(0, 0, 0);
-    padding: 30px;
+  color: rgb(0, 0, 0);
+  padding: 30px;
 }
 
 .titulo-contacto-bootstrap {
-    text-align: center;
-    margin: 15px;
+  text-align: center;
+  margin: 15px;
 }
 
 .contacto-bootstrap {
-    padding: 30px;
-    height: auto;
+  padding: 30px;
+  height: auto;
+}
+
+.contacto-bootstrap {
+  padding: 70px;
+  height: auto;
 }
 
 /* BOOTSTRAP */
+section {
+  display: flex;
+}
+section .titulo-anidamiento {
+  font-weight: bold;
+}
+section .titulo-anidamiento:hover {
+  color: gray;
+}
+
+.tip-small {
+  background-color: yellow;
+  width: 250px;
+  height: 500px;
+  color: rgb(190, 14, 14);
+  margin: 10px;
+}
+
+.tip-big {
+  background-color: red;
+  width: 350px;
+  height: 600px;
+  color: rgb(190, 14, 14);
+  margin: 10px;
+}
+
+.card__button, .card__button--success, .card__button--danger {
+  padding: 0, 5rem 0, 8rem;
+  border: 0;
+  background-color: blue;
+  color: white;
+}
+
+.card__button--danger {
+  background-color: red;
+}
+
+.card__button--success {
+  background-color: green;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #21b17a;
+  position: relative;
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0) translateY(0) translateZ(0);
+  }
+  33% {
+    transform: translateX(100px) translateY(0) translateZ(0);
+  }
+  66% {
+    transform: translateX(100px) translateY(100px) translateZ(0);
+  }
+  100% {
+    transform: translateX(0) translateY(100px) translateZ(0);
+  }
+}
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotateCube 5s infinite linear;
+}
+
+@keyframes rotateCube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+.linear-gradient {
+  margin-top: 200px;
+  width: 100%;
+  height: 200px;
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+.radial-gradient {
+  width: 100%;
+  height: 200px;
+  background-image: radial-gradient(circle, red, gold);
+}
+
+.translate {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform: translate(50px, 100px);
+}
+
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transform: rotate(45deg);
+}
+
+.scale {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  transform: scale(2, 1.5);
+}
+
+.skew {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  transform: skew(20deg, 10deg);
+}
+
+/*TRANSICIÓN*/
+.ease-box {
+  transition: transform 1s ease;
+}
+
+.linear-box {
+  transition: transform 1s linear;
+}
+
+.ease-in-box {
+  transition: transform 1s ease-in;
+}
+
+.ease-out-box {
+  transition: transform 1s ease-out;
+}
+
+.ease-in-out-box {
+  transition: transform 1s ease-in-out;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: steelblue;
+  margin: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:hover {
+  transform: translateX(100px);
+}
+
+cssCopiar código .button11 {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease;
+}
+
+.button11:hover {
+  background-color: green;
+}
+
+/*# sourceMappingURL=index.css.map */
