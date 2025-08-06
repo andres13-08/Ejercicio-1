@@ -166,6 +166,7 @@
     background-size: cover;
     background-position: center;
     padding: 50px;
+    display: grid;
 }
 
 .titulo-introduccion {
@@ -265,6 +266,7 @@
     max-width: 100%;
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
+    display: grid;
 }
 
 .home-nosotros {
@@ -823,7 +825,7 @@
 
 
 /* BOOTSTRAP */
-section {
+.section-bootstrap {
     display: flex;
     .titulo-anidamiento {
         font-weight: bold;
@@ -871,7 +873,6 @@ section {
     height: 100px;
     background-color: #21b17a;
     position: relative;
-    animation: move 5s infinite;
 }
 
 @keyframes move {
@@ -960,29 +961,36 @@ section {
   transition: transform 1s ease-in-out;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: steelblue;
-  margin: 10px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .box:hover {
-  transform: translateX(100px);
+  transform: translateX(800px);
 }
 
-cssCopiar código
 .button11 {
-  background-color: blue;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
-  transition: background-color 0.5s ease;
+  transition: background-color 5s ease;
+  margin: 120px;
 }
 
 .button11:hover {
-  background-color: green;
+  background-color: rgb(75, 74, 73);
+  color: white;
+}
+
+.box-transition1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    transition: width 5s ease, background-color 5s ease;
+    margin-top: 50px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.box-transition1:hover {
+    width: 200px;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
