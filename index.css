@@ -177,7 +177,7 @@
   place-items: center;
   width: 100%;
   max-width: 100%;
-  background-image: url("../imagenes/home-movil.jpg");
+  background-image: url("./imagenes/home-movil.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -266,7 +266,7 @@
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
     display: grid;
-    background-image: url("../imagenes/fondo1home.jpg");
+    background-image: url("./imagenes/fondo1home.jpg");
   }
   .home-nosotros {
     display: flex;
