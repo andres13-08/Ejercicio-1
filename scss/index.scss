@@ -26,6 +26,7 @@
     background-color: white; /* Color base visible antes de hacer scroll */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
     z-index: 999; /* Para que quede por encima del contenido */
+    border: 1px solid #000;
 }
 
 .header.scrolled {
@@ -59,7 +60,8 @@
 
 .navegador {
   display: flex; /*Define un contenedor como un flex container y habilita el uso de todas las propiedades Flexbox en sus elementos hijos*/
-  flex-direction: row; /*Los elementos se colocan en una columna vertical.*/
+  flex-direction: column;
+  flex-wrap: wrap; /*Los elementos se colocan en una columna vertical.*/
   position: fixed; /*Posiciona el elemento en relación con la ventana del navegador. El elemento se mantiene en la misma posición incluso cuando se desplaza la página.*/
   top: 50px; /*Define la altura a la que va a estar siempre el elemento. Entre más alto el número, más se baja el elemento*/
   right: 10px; /*Define la posición horizontal a la que va a estar siempre el elemento. Entre más alto el número, el elemento más se va  la izquierda*/
@@ -115,7 +117,7 @@
 
 .navegador {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }    
 
@@ -201,9 +203,8 @@
     background-position: center;
     display: grid;
     padding-top: 20px;
-    padding: 50px;    
     padding-bottom: 20px;
-    height: 48%;
+    height: 40%;
 }
 
 .titulo-introduccion {
@@ -221,7 +222,7 @@
     text-align: center;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
@@ -232,12 +233,12 @@
 }
 
 .home-nosotros {
-    background-color: rgb(236, 236, 236);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .home-titulo-por-que-redinnova {
@@ -251,20 +252,20 @@
 
 .home-razones-por-que-redinnova { /*FALTA REPLICAR EN pc*/
     flex: 1 1 calc(100% - 10px);
-    box-sizing: border-box;
-    position: center;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
+    flex-wrap: wrap;
+    padding: 10px;
     color: rgb(0, 0, 0);
-    height: 60px;
-    border-radius: 20px;
+    text-align: center;
+    width: 90%;
     border: 1px solid #000000;
-    border-bottom: 4px solid #000000;
+    border-radius: 5px;
+    background-color: #e1ee6c94;
 }
 
 .home-razones-por-que-redinnova:hover {
-    background-color: #b1b1b1;
+    background-color: rgb(7, 7, 7);
+    color: #ffffff;
+    opacity: 70%;
 }
 
 
@@ -273,10 +274,19 @@
 }
 
 @media (max-width: 780px) {
+.home-nosotros {
+    margin-top: 0;
+}
+
+.home-titulo-por-que-redinnova {
+    font-size: 45px;
+}
+
 .home-parrafo-por-que-redinnova {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
+    align-content: center;
 }
 
 .home-galeria {
@@ -287,12 +297,16 @@
 @media (min-width: 780px) {
 .introduccion {
     place-items: center;
-    padding: 90px;
     max-width: 100%;
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
     display: grid;
+    align-content: center;
     background-image: url("../imagenes/fondo1home.jpg");
+}
+
+.parrafo-introduccion {
+    margin-bottom: 150px;
 }
 
 .home-nosotros {
@@ -301,6 +315,7 @@
     gap: 10px;
     max-width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #e1ee6c94;
@@ -313,29 +328,35 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .home-razones-por-que-redinnova {
-    flex: 0 0 calc(50% - 5px);
-    position: center;
-    padding: 20px;
+    flex: 0 0 calc(40% - 5px);
+    padding: 5px;
     background-color: white;
     color: black;
-    height: 75px;
     width: 40%;
     margin: auto;
     align-items: center;
     justify-content: center;
-    height: 60px; /*Me ayuda con el ancho de los rcuadros d las razones, para que todo el texto quede dentro. Esto aplica para pantallas con menos de 247PX.*/
+    border-radius: 5px;
     }
-}
 
 .home-razones-por-que-redinnova:hover {
-    background-color: #1f1717c9;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: background-color 2s ease, backdrop-filter 2s ease;
+    color: white;
 }
+
+.carousel-inner {
+    max-height: 600px;
+    align-items: center;
+}
+}
+
+
 
 
 
@@ -343,48 +364,20 @@
 
 
 /*NOSOTROS*/
-.nosotros {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: auto;
-    max-width: 100%;
-    background-color: rgb(211, 211, 211);
-    border: 2px solid #000000;
-    border-radius: 5px;
-}
-
 .enlace-contacto-nosotros {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px;
     width: 60%;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
+    color: black;
 }
 
 .enlace-contacto-nosotros:hover {
     background-color: #222324;
-    color:brown;
-}
-
-.titulo-nosotros {
-    display: block;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    font-family: "Bebas Neue", sans-serif;
-    margin-top: 100px;
-}
-
-.parrafo-nosotros {
-    margin-right: 45px;
-    margin-left: 45px;
-    line-height: 1.5;
-    text-align: justify;
 }
 
 .titulo-por-que-redinnova {
@@ -394,12 +387,15 @@
     unicode-bidi: isolate;
     font-family: "Bebas Neue", sans-serif;
     padding: 15px;
+    background-color: rgb(147, 184, 240);
+    margin-top: 60px;
 }
 
 .titulo-por-que-redinnova:hover {
-    font-size: 70px;
-    background-color: #64e92f;
+    font-size: 50px;
+    background-color: rgb(147, 184, 240);
     font-weight: bold;
+    transition: background-color 2s ease, backdrop-filter 2s ease, font-size 2s;
 }
 
 .nosotros-seccion-razones {
@@ -414,17 +410,17 @@
 .nosotros-razones1 {
     flex: 1 1 calc(100% - 10px);
     flex-wrap: wrap;
-    padding: 15px;
-    margin: 5px;
+    padding: 10px;
+    margin: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
-    width: 90%;
+    width: 100%;
     border: 1px solid #000000;
 }
 
 .nosotros-razones1:hover {
-    background-color: #666;
-    border: 3px solid #000000;
+    background-color: rgb(147, 184, 240);
+    border: 1px solid #000000;
     color: azure;
 }
 
@@ -439,17 +435,28 @@
 }
 
 @media (min-width: 780px) {
+    .nosotros-seccion-razones {
+        background-color: rgb(147, 184, 240);
+    }
+
+    .titulo-por-que-redinnova {
+        margin: 0;
+        padding-top: 140px;
+    }
+
     .nosotros-razones1 {
-        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        justify-content: space-between;
         border-radius: 10px;
     }
 
-    .titulo-nosotros {
-        margin-top: 100px;
-    }    
-
     .enlace-contacto-nosotros {
         width: 40%;
+        background-color: black;
+        color: white;
     }
 }
 
@@ -467,93 +474,56 @@
 
 
 /*SERVICIOS*/
-.especialidades {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    padding-bottom: 20px;
-    width: auto;
-    max-width: 100%;
-}
-
 .titulo-especialidades {
     position: sticky;
     text-align: center;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
-    top: 50px;
-    margin: 50px;
+    top: 100px;
+    margin: 80px;
     z-index: 998;
-    background-color: #25aa77;
+    background-color: #098519b4;
     border-radius: 20px;
-}
-
-.especialidad1 {
-    display: inline-block;
-    place-content: center;
-    border: 3px solid rgba(0, 0, 0, 0.486);
-    text-align: left;
-    background-color: rgba(238, 238, 238, 0.733);
-    margin: 10px;
-    padding: 10px;
-    width: auto;
-    max-width: 80%;
-    border-radius: 20px;
-    font-size: smaller;
-}
-
-.titulo-especialidades-con-bootstrap {
-    position: sticky;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Bebas Neue", sans-serif;
-    background-color: rgb(48, 177, 177);
-    top: 50px;
-    z-index: 998;
-    margin: 50px;
-    border-radius: 20px;
-}
-
-.card-img-top {
-    width: auto;
-    align-items: center;
-    opacity: 70%;
-}
-
-.card-bootstrap {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
 }
 
 .card {
     width: 80%;
 }
 
+.card-img-top {
+    width: auto;
+    align-items: center;
+    opacity: 75%;
+}
+
+.card-bootstrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-primary {
+    display: flex;
+    background-color: #438b07;
+    justify-content: center;
+    justify-items: center;
+}
+
 @media (min-width: 780px) {
-     .especialidades {
-        padding-bottom: 10px;
-        margin: 20px;
-     }
-    
     .titulo-especialidades {
         position: sticky;
         text-align: center;
-}
-    
-    .especialidad1 {
-        width: 45%;
-        font-size: 12px;
-        padding: 0 5px;
+        margin: 100px 170px 20px 170px;
     }
 
-    .titulo-especialidades-con-bootstrap {
-        margin-top: 20px;
-        position: sticky;
-        text-align: center;
+    .card-bootstrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
     .card {
@@ -562,10 +532,10 @@
     }
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .card {
-        max-width: 45%;
+        width: 70vw !important;
+        max-width: 100%;
     }
 }
 
