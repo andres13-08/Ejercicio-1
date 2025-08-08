@@ -177,7 +177,7 @@
   place-items: center;
   width: 100%;
   max-width: 100%;
-  background-image: url("./imagenes/home-movil.jpg");
+  background-image: url("../imagenes/home-movil.jpg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -266,7 +266,7 @@
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
     display: grid;
-    background-image: url("./imagenes/fondo1home.jpg");
+    background-image: url("../imagenes/fondo1home.jpg");
   }
   .home-nosotros {
     display: flex;
@@ -275,7 +275,8 @@
     max-width: 100%;
     margin-top: 20px;
     padding-top: 20px;
-    background-color: rgba(201, 218, 52, 0.5803921569);
+    padding-bottom: 20px;
+    background-color: rgba(225, 238, 108, 0.5803921569);
   }
   .home-titulo-por-que-redinnova {
     margin: auto;
@@ -284,14 +285,6 @@
     font-family: "Bebas Neue", sans-serif;
     font-size: 30px;
     padding: 10px;
-  }
-  .home-parrafo-por-que-redinnova {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    margin: 20px;
-    text-align: justify;
-    border-radius: 20px;
   }
   .home-razones-por-que-redinnova {
     flex: 0 0 calc(50% - 5px);
@@ -308,7 +301,10 @@
   }
 }
 .home-razones-por-que-redinnova:hover {
-  background-color: #dbdbdb;
+  background-color: rgba(31, 23, 23, 0.7882352941);
+  font-size: 20px;
+  color: white;
+  transition: background-color 2s ease, backdrop-filter 2s ease;
 }
 
 /*NOSOTROS*/
