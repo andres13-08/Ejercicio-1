@@ -22,7 +22,15 @@
   width: 100%;
   z-index: 1000; /*Para dejar fijo en la pantalla, sobreponiendo uno sobre el otro al bajar 999, luego 998, etc.*/
   background-color: white;
-  padding: 0px 10px 0px 25px;
+  padding: 0px 10px 0px 10px;
+  background-color: white; /* Color base visible antes de hacer scroll */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  z-index: 999; /* Para que quede por encima del contenido */
+}
+
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.774); /* Transparencia al hacer scroll */
+  backdrop-filter: blur(5px);
 }
 
 .titulo-header {
@@ -35,9 +43,10 @@
 }
 
 .menu-btn {
-  border: 1px solid rgb(255, 166, 0);
+  border: 1px solid rgb(0, 0, 0);
   background-color: white;
-  padding: 8px 12px;
+  padding: 10px 20px;
+  margin: 5px;
   cursor: pointer;
   border-radius: 5px;
   font-size: 16px;
@@ -45,7 +54,7 @@
 
 .menu-btn:hover {
   border: 1px solid #222324;
-  background-color: #21b17a;
+  background-color: #6058a8;
 }
 
 .navegador {
@@ -71,9 +80,10 @@
 }
 
 .logo {
-  width: 60px;
+  width: 75px;
   justify-content: center;
   justify-items: center;
+  border-radius: 5px;
 }
 
 .navegador a {
@@ -83,6 +93,24 @@
 }
 
 @media (min-width: 780px) {
+  .header {
+    top: 20px;
+    border-radius: 10px;
+    height: 60px;
+    width: 80%;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right: 10%;
+    background-color: white; /* Color base visible antes de hacer scroll */
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    z-index: 999; /* Para que quede por encima del contenido */
+  }
+  .header.scrolled {
+    background-color: rgba(255, 255, 255, 0.774); /* Transparencia al hacer scroll */
+    backdrop-filter: blur(5px);
+  }
   .navegador {
     display: flex;
     flex-direction: row;
@@ -104,7 +132,8 @@
 }
 
 #menu-toggle:hover {
-  background-color: rgb(255, 144, 144); /*Esto me ayuda a definir el fondo del botón cuando paso el mouse por encima*/
+  background-color: rgb(88, 118, 175); /*Esto me ayuda a definir el fondo del botón cuando paso el mouse por encima*/
+  color: white;
 }
 
 .navegador li {
@@ -138,20 +167,24 @@
     margin: 20px;
     padding: 20px;
   }
+  .a {
+    align-items: center;
+  }
 }
 /*HOME*/
 /*HOME INTRODUCCIÓN*/
 .introduccion {
   place-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
   width: 100%;
   max-width: 100%;
-  background-image: url(fondoHome.png);
+  background-image: url("../imagenes/home-movil.jpg");
   background-size: cover;
   background-position: center;
-  padding: 50px;
   display: grid;
+  padding-top: 20px;
+  padding: 50px;
+  padding-bottom: 20px;
+  height: 48%;
 }
 
 .titulo-introduccion {
@@ -215,31 +248,14 @@
   background-color: #b1b1b1;
 }
 
-.carousel-dark-slide {
-  margin: 40px;
-  width: 60%;
-}
-
-.home-galeria {
-  max-width: auto;
-  width: 60%;
-}
-
-.d-block {
-  max-width: auto;
-  width: 60%;
-}
-
-@media (min-width: 247px) {
-  .home-razones-por-que-redinnova {
-    height: 60px; /*Me ayuda con el ancho de los rcuadros d las razones, para que todo el texto quede dentro. Esto aplica para pantallas con menos de 247PX.*/
-  }
-}
 @media (max-width: 780px) {
   .home-parrafo-por-que-redinnova {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
+  }
+  .home-galeria {
+    padding: 650px;
   }
 }
 @media (min-width: 780px) {
@@ -250,6 +266,7 @@
     background-color: rgb(230, 230, 231);
     padding-bottom: 20px;
     display: grid;
+    background-image: url("../imagenes/fondo1home.jpg");
   }
   .home-nosotros {
     display: flex;
@@ -258,6 +275,7 @@
     max-width: 100%;
     margin-top: 20px;
     padding-top: 20px;
+    background-color: rgba(201, 218, 52, 0.5803921569);
   }
   .home-titulo-por-que-redinnova {
     margin: auto;
@@ -286,11 +304,13 @@
     margin: auto;
     align-items: center;
     justify-content: center;
-  }
-  .home-razones-por-que-redinnova:hover {
-    background-color: #dbdbdb;
+    height: 60px; /*Me ayuda con el ancho de los rcuadros d las razones, para que todo el texto quede dentro. Esto aplica para pantallas con menos de 247PX.*/
   }
 }
+.home-razones-por-que-redinnova:hover {
+  background-color: #dbdbdb;
+}
+
 /*NOSOTROS*/
 .nosotros {
   width: 100%;
@@ -457,7 +477,7 @@
 .card-img-top {
   width: auto;
   align-items: center;
-  opacity: 30%;
+  opacity: 70%;
 }
 
 .card-bootstrap {
