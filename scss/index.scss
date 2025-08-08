@@ -25,13 +25,14 @@
     padding: /*ARRIBA*/ 0px /*DERECHA*/ 10px /*ABAJO*/ 0px /*IZQUIERDA*/ 10px;
     background-color: white; /* Color base visible antes de hacer scroll */
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+    backdrop-filter: none;
     z-index: 999; /* Para que quede por encima del contenido */
     border: 1px solid #000;
 }
 
 .header.scrolled {
     background-color: rgba(255, 255, 255, 0.774); /* Transparencia al hacer scroll */
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
 }
 
 .titulo-header {
@@ -983,4 +984,14 @@
     width: 200px;
     background-color: rgb(0, 0, 0);
     color: white;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: myAnimation 2s infinite; 
+}
+
+@keyframes myAnimation {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
 }
