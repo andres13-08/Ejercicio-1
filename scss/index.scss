@@ -197,7 +197,7 @@
 /*HOME INTRODUCCIÓN*/
 .introduccion {
     place-items: center;
-    width: 100%;
+    width: auto;
     max-width: 100%;
     background-image: url("../imagenes/home-movil.jpg");
     background-size: cover;
@@ -239,7 +239,7 @@
     gap: 10px;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;    
 }
 
 .home-titulo-por-que-redinnova {
@@ -252,7 +252,7 @@
 }
 
 .home-razones-por-que-redinnova { /*FALTA REPLICAR EN pc*/
-    flex: 1 1 calc(100% - 10px);
+    flex: 1 1 calc(80% - 10px);
     flex-wrap: wrap;
     padding: 10px;
     color: rgb(0, 0, 0);
@@ -337,7 +337,7 @@
     padding: 5px;
     background-color: white;
     color: black;
-    width: 40%;
+    width: 100%;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -415,7 +415,6 @@
     margin: 20px;
     color: rgb(0, 0, 0);
     text-align: center;
-    width: 100%;
     border: 1px solid #000000;
 }
 
@@ -423,6 +422,11 @@
     background-color: rgb(147, 184, 240);
     border: 1px solid #000000;
     color: azure;
+}
+
+.botones-interna-nosotros {
+    display: flex;
+    justify-content: space-around;
 }
 
 .boton-equipo {
@@ -438,6 +442,7 @@
 @media (min-width: 780px) {
     .nosotros-seccion-razones {
         background-color: rgb(147, 184, 240);
+        max-width: auto;
     }
 
     .titulo-por-que-redinnova {
@@ -449,12 +454,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 60%;
+        width: auto;
         justify-content: space-between;
         border-radius: 10px;
     }
 
     .enlace-contacto-nosotros {
+        max-width: 100%;
         width: 40%;
         background-color: black;
         color: white;
@@ -549,7 +555,7 @@
 
 /*BLOG*/
 .blog-de-proyectos {
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(173, 106, 137);
     border: 2px solid #000000;
     border-radius: 5px;
     width: auto;
@@ -610,7 +616,7 @@
 
 .c1 {
     grid-area: c1;
-    background-color: #eeba89;
+    background-color: rgb(245, 206, 245);
 }
 
 .c2 {
@@ -625,7 +631,7 @@
 
 .c4 {
     grid-area: c4;
-    background-color: #eeba89;
+    background-color: rgb(245, 206, 245);
 }
 
 .c5 {
@@ -645,7 +651,7 @@
 
 .c8 {
     grid-area: c8;
-    background-color: rgb(104, 65, 15);
+    background-color: rgba(148, 71, 148, 0.479);
     color: #ffffff;
 }
 
@@ -666,9 +672,6 @@
     .caja {
         margin: 10px;
     }
-
-
-
 }
 
 @media (min-width: 781px) {
@@ -693,7 +696,7 @@
 
 .titulo-precios {
     padding: 120px 0px 50px 0px;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(241, 126, 126);
     border: 2px solid #000000;
     border-radius: 5px;
     display: block;
@@ -701,11 +704,6 @@
     font-weight: bold;
     font-size: 40px;
     font-family: "Bebas Neue", sans-serif;
-}
-
-.titulo-precios-bootstrap {
-    text-align: center;
-    margin: 15px;
 }
 
 .tabla-bootstrap {
@@ -722,7 +720,7 @@
 }
 
 .table {
-    width: 940px;
+    width: auto;
 }
 
 .col {
@@ -734,10 +732,13 @@
 }
 
 .tabla1 {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 20px;
     margin-bottom: 50px;
+    width: auto;
+    max-width: 100%;
 }
 
 .tabla1 th {
@@ -766,6 +767,7 @@
     background-color: rgb(211, 211, 211);
     border: 2px solid #000000;
     border-radius: 5px; 
+    width: 100%;
 }
 
 .titulo-contacto {
@@ -803,11 +805,10 @@
     height: auto;
 }
 
-.contacto-bootstrap {
-    padding: 70px;
-    height: auto;
+.input-group mb-3 {
+    display: flex;
+    flex-direction: row;
 }
-
 
 
 
